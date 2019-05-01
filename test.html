@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+</head>
+<body  >
+  <!-- 背景设置图片background-image:url(图片链接../../bj.jpg); -->
+  
+    <button  style="width:99px; height:99px; 
+        background-color:#244DFF;
+        
+      "
+      id="5"
+      
+    > 
+         启动本地应用1 
+     </button>
+       <button  style="width:99px; height:99px; 
+        background-color:#244DFF;
+        
+      action="htmltest.html"
+      id="2"
+      onclick="testF()"
+    > 
+         启动本地应用 2
+     </button>
+     
+</body>
+<script>
+    var button=document.querySelector('button')
+    button.onclick=function () {//function
+    	 //alert("按钮id："+button.id); 
+        //window.open('Test://')//新窗口
+        window.location.href=('Test://')//启动注册文件  Test
+        //window.location.href=('http://hao123.com')//网络链接
+       
+    }
+    function testF() {//function
+   	   alert("按钮id："+button.id); 
+       //window.open('Test://')//新窗口
+       //window.location.href=('Test://')//启动注册文件  Test
+       //window.location.href=('http://hao123.com')//网络链接
+     
+      
+   }
+</script>
+</html>
